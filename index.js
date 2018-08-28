@@ -11,7 +11,7 @@ function ajaxGet(url) {
     request.onreadystatechange = function() {
         const myIP = document.querySelector('.myIP');
 
-        if(request.readystate == 4 && request.status == 200) {
+        if(request.readyState == 4 && request.status == 200) {
             myIP.textContent = request.responseText;
         }
     }
